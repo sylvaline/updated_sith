@@ -2,7 +2,7 @@
     width: 100%;
     height: 14vh;
     color: white;
-
+    
     
 
     .nav_mobile{
@@ -98,7 +98,8 @@
         background-color: white;
         height: 5em;
         color: $accent_color;
-
+        transition: all .5s linear;
+        
         .contact{
             a{
                 color: white;
@@ -112,6 +113,7 @@
         }
 
         button{
+            
             a{
                 color: white;
             }
@@ -211,15 +213,16 @@
             font-weight: 500;
 
             .contact{
-                background-color: $accent_color;
+                background-color: $bg_deep_blue;
                 border-radius: .3em;
 
                 &:hover{
-                    background-color: $bg_deep_blue;
+                    background-color: lighten($color: #233d93, $amount: 9);
                     border-radius: .3em;
                 }
 
                 a{
+                    color: $accent_color;
                     &:hover{
                         color: $accent_color;
                     } 
@@ -232,7 +235,7 @@
                 padding: .5em 1em;
 
                 &:hover{
-                    background-color: $gray;
+                    background-color: $bg_deep_blue;
                     color: $accent_color;
                     border-radius: .3em;
                 }
@@ -260,6 +263,7 @@
         }
         .nav_mobile{
             display: block;
+            
 
             &.open{
                 position: fixed;
@@ -273,10 +277,25 @@
             
             .phone{
                 margin-top: 0;
+                background-color: $accent_color;
+
+                // .bar_line{
+                //     background-color: $bg_deep_blue;
+                // }
                 p{
                     span{
                         color: $accent_color;
+                        margin-left: 1.5em;
+                        font-size: 1.3em;
                     }
+                }
+            }
+            .mobile_social{
+                display: flex;
+
+                i{
+                    margin-left: 1em;
+                    font-size: 2em;
                 }
             }
         }
@@ -287,10 +306,11 @@
         
         .main_nav{
             padding: 1em;
+            margin-top: -.2em !important;
             background-color: transparent;
             
             &.open{
-                
+                margin-top: 2em !important;
             }
 
             .hamburger{

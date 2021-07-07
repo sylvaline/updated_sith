@@ -117,7 +117,7 @@ function Home() {
           </Link>
                 </div>
                 <div className="fimg f3">
-                <Link to="/learn-resource-center">
+                <Link to="/learning-resource-centre">
                 <div className="card">
             <img src="\image\office_img2.jpg" alt="" srcset="" />
             <div className="open">
@@ -125,7 +125,7 @@ function Home() {
                 <Slide bottom>
                   <h2>
                     {" "}
-                   Learn Resource Centre
+                   Learning Resource Centre
                   </h2>
                   
                 </Slide>
@@ -137,7 +137,7 @@ function Home() {
               </div>
               <div className="second_col">
               <div className="simg s1">
-              <Link to="/document-resource-center">
+              <Link to="/document-resource-centre">
               <div className="card">
             <img src="\image\office_img1.jpg" alt="" srcset="" />
             <div className="open">
@@ -156,7 +156,7 @@ function Home() {
           </Link>
                 </div>
                 <div className="simg s2">
-                <Link to="/document-resource-center">
+                <Link to="/innovation-support">
                 <div className="card">
             <img src="\image\office_img2.jpg" alt="" srcset="" />
             <div className="open">
@@ -179,7 +179,7 @@ function Home() {
               </div>
               <div className="third_col">
               <div className="timg">
-              <Link to="/document-resource-center">
+              <Link to="/startup-funding">
               <div className="card">
             <img src="\image\office_img2.jpg" alt="" srcset="" />
             <div className="open">
@@ -242,21 +242,27 @@ function Home() {
         <div className="home_stratege_inner">
           <div className="training">
             <div className="stratege_card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+            <div className="icon">
+            <i className="fas fa-graduation-cap"></i>
+          </div>
               <h2>TRAINING</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
             </div>
           </div>
           <div className="out_sourcing">
           <div className="stratege_card">
-          <img src="\image\office_img1.jpg" alt="" srcset="" />
-              <h2>OUT SOURCING</h2>
+          <div className="icon">
+          <i class="fab fa-creative-commons-share"></i>
+          </div>
+              <h2>OUTSOURCING</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
           </div>
           </div>
           <div className="mentorship">
           <div className="stratege_card">
-          <img src="\image\office_img1.jpg" alt="" srcset="" />
+          <div className="icon">
+          <i className="fas fa-chalkboard-teacher"></i>
+          </div>
               <h2>MENTORSHIP</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
           </div>
@@ -318,21 +324,6 @@ function Home() {
           <div className="home_content first_content">
             <div  className="home_content_inner">
             
-             
-                <div className="right">
-                  <div className="right_inner">
-                  <Swipe/>
-                  </div>
-                </div>
-             
-             
-          
-              <div className="bg_about_back_line"></div>
-               <div className="bg_about_back"></div>
-               <div className="bg_about_back shift_right"></div>
-        
-
-             
                <div className="left">
               
               <Fade top>
@@ -353,6 +344,13 @@ function Home() {
               </Fade>
             
             </div>
+
+            <div className="right">
+                  <div className="right_inner">
+                  <Swipe/>
+                  </div>
+                </div>
+             
              
               </div>
               
@@ -384,7 +382,7 @@ function Home() {
           </Link>
                 </div>
                 <div className="fimg f3">
-                <Link to="/learn-resource-center">
+                <Link to="/learning-resource-centre">
                 <div className="card">
             <img src="\image\office_img2.jpg" alt="" srcset="" />
             <div className="open">
@@ -392,7 +390,7 @@ function Home() {
                 <Slide bottom>
                   <h2>
                     {" "}
-                   Learn Resource Centre
+                   Learning Resource Centre
                   </h2>
                   
                 </Slide>
@@ -404,7 +402,7 @@ function Home() {
               </div>
               <div className="second_col">
               <div className="simg s1">
-              <Link to="/document-resource-center">
+              <Link to="/document-resource-centre">
               <div className="card">
             <img src="\image\office_img1.jpg" alt="" srcset="" />
             <div className="open">
@@ -423,7 +421,7 @@ function Home() {
           </Link>
                 </div>
                 <div className="simg s2">
-                <Link to="/document-resource-center">
+                <Link to="/innovation-support">
                 <div className="card">
             <img src="\image\office_img2.jpg" alt="" srcset="" />
             <div className="open">
@@ -433,9 +431,6 @@ function Home() {
                     {" "}
                     Innovation Support
                   </h2>
-
-                  
-                 
                 </Slide>
               </div>
             </div>
@@ -446,7 +441,7 @@ function Home() {
               </div>
               <div className="third_col">
               <div className="timg">
-              <Link to="/document-resource-center">
+              <Link to="/startup-funding">
               <div className="card">
             <img src="\image\office_img2.jpg" alt="" srcset="" />
             <div className="open">
@@ -457,8 +452,6 @@ function Home() {
                     Startup Funding
                   </h2>
 
-                  
-                
                 </Slide>
               </div>
             </div>
@@ -515,7 +508,9 @@ function Home() {
         <Slide left>
           <div className="training">
             <div className="stratege_card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+            <div className="icon">
+            <i className="fas fa-graduation-cap"></i>
+            </div>
               <h2>TRAINING</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
             </div>
@@ -524,8 +519,10 @@ function Home() {
           <Slide left >
           <div className="out_sourcing">
           <div className="stratege_card">
-          <img src="\image\office_img1.jpg" alt="" srcset="" />
-              <h2>OUT SOURCING</h2>
+          <div className="icon">
+          <i class="fab fa-creative-commons-share"></i>
+          </div>
+              <h2>OUTSOURCING</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
           </div>
           </div>
@@ -533,7 +530,9 @@ function Home() {
           <Slide left >
           <div className="mentorship">
           <div className="stratege_card">
-          <img src="\image\office_img1.jpg" alt="" srcset="" />
+          <div className="icon">
+          <i className="fas fa-chalkboard-teacher"></i>
+          </div>
               <h2>MENTORSHIP</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
           </div>

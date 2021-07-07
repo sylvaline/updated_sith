@@ -9,8 +9,11 @@ import Contact from "./component/Contact";
 import OurInnovations from "./component/OurInnovations";
 import CoWorking from "./component/CoWorking";
 import About from "./component/About";
+import AboutUser from "./component/AboutUser";
 import Footer from "./component/Footer";
 import PageLoading from "./component/PageLoading";
+import StartupFunding from "./component/StartupFunding";
+import InnovationSupport from "./component/InnovationSupport";
 
 function App() {
   const [page_loading, setPage_loading] = useState(true);
@@ -39,7 +42,10 @@ function App() {
               <Route path="/events" component={Events} />
               <Route path="/our-innovations" component={OurInnovations} />
               <Route path="/about" component={About} />
+              <Route path="/about-user" component={AboutUser} />
               <Route path="/co-working" component={CoWorking} />
+              <Route path="/startup-funding" component={StartupFunding} />
+              <Route path="/innovation-support" component={InnovationSupport} />
               <Route
                 path="/document-resource-centre"
                 exact

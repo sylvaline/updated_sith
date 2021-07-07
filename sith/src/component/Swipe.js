@@ -1,8 +1,8 @@
 import React, {useState } from "react";
+import { Link } from "react-router-dom";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import bg1 from '../assets/image/bg1.png'
-import bg from '../assets/image/bg.jpg'
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -30,25 +30,70 @@ function Swipe() {
       >
         
         <SwiperSlide>
-        <img src="\image\office_img1.jpg" alt="" srcset="" />
+        <Link to="/about-user">
+        <div className="swiper_style">
+          <img src="\image\office_img1.jpg" alt="" srcset="" />
+          <div className="swiper_card">
+            <div className="swiper_card_inner">
+            <i className="far fa-plus-square"></i>
+            </div>
+          </div>
+          </div>
+        </Link>
         </SwiperSlide>
         <SwiperSlide>
-        <img src="\image\office_img2.jpg" alt="" srcset="" />
+        <Link to="/about-user">
+        <div className="swiper_style">
+          <img src="\image\office_img2.jpg" alt="" srcset="" />
+          <div className="swiper_card">
+            <div className="swiper_card_inner">
+            <i className="far fa-plus-square"></i>
+            </div>
+          </div>
+          </div>
+        </Link>
         </SwiperSlide>
         <SwiperSlide>
-        <img src="\image\office_img2.jpg" alt="" srcset="" />
+        <Link to="/about-user">
+        <div className="swiper_style">
+          <img src="\image\office_img1.jpg" alt="" srcset="" />
+          <div className="swiper_card">
+            <div className="swiper_card_inner">
+            <i className="far fa-plus-square"></i>
+            </div>
+          </div>
+          </div>
+        </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bg1} alt="g" />
+        <Link to="/about-user">
+        <div className="swiper_style">
+          <img src="\image\office_img2.jpg" alt="" srcset="" />
+          <div className="swiper_card">
+            <div className="swiper_card_inner">
+            <i className="far fa-plus-square"></i>
+            </div>
+          </div>
+          </div>
+        </Link>
         </SwiperSlide>
         <SwiperSlide>
-        <img src="\image\office_img1.jpg" alt="" srcset="" />
+        <Link to="/about-user">
+        <div className="swiper_style">
+          <img src="\image\office_img1.jpg" alt="" srcset="" />
+          <div className="swiper_card">
+            <div className="swiper_card_inner">
+            <i className="far fa-plus-square"></i>
+            </div>
+          </div>
+          </div>
+        </Link>
         </SwiperSlide>
         
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
-        spaceBetween={10}
+        spaceBetween={20}
         slidesPerView={4}
         freeMode={true}
         watchSlidesVisibility={true}
@@ -62,10 +107,10 @@ function Swipe() {
         <img src="\image\office_img2.jpg" alt="" srcset="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="\image\office_img2.jpg" alt="" srcset="" />
+        <img src="\image\office_img1.jpg" alt="" srcset="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bg1} alt="g" />
+        <img src="\image\office_img2.jpg" alt="" srcset="" />
         </SwiperSlide>
         <SwiperSlide>
         <img src="\image\office_img1.jpg" alt="" srcset="" />

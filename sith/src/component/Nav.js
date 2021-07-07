@@ -55,7 +55,7 @@ function Nav() {
           <div className={navScroll ? "main_nav open" : "main_nav"}>
             <div className="logo">
               <h1>
-                <Link to="/">Space Innovation</Link>
+                <Link to="/">Space </Link>
               </h1>
             </div>
 
@@ -105,7 +105,7 @@ function Nav() {
                   <i className="fas fa-phone"></i>
                 </a>
               </span>
-              <span className="bar_line">|</span>
+              
               <span>
                 <a
                   href="mailto:okekesylvaline.com?subject=From Space Innovation Tech Hub websit"
@@ -115,12 +115,18 @@ function Nav() {
                 </a>
               </span>
             </p>
+            <div className="mobile_social">
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-twitter"></i>
+            <i className="fab fa-youtube"></i>
+            <i className="fab fa-instagram"></i>
+            </div>
           </div>
 
           <div className={navScroll ? "main_nav open" : "main_nav"}>
             <div className="logo">
               <h1>
-                <Link to="/">Space Innovation</Link>
+                <Link to="/">Space </Link>
               </h1>
             </div>
             <div
