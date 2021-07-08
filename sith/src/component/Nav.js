@@ -142,6 +142,28 @@ function Nav() {
             {isMenu && (
               <div className="menu">
                 <ul className={navScroll ? "ul open" : " ul"}>
+                  
+                  <li onClick={closeMenu} className="">
+                    <NavLink to="/events">Events</NavLink>
+                  </li>
+                  <li onClick={closeMenu}>
+                    <NavLink to="/about">About us</NavLink>
+                  </li>
+
+                  <li onClick={closeMenu}>
+                    <NavLink to="/co-working">Co-working</NavLink>
+                  </li>
+                  <li onClick={closeMenu}>
+                    <NavLink to="/our-innovations">Our Innovations </NavLink>
+                  </li>
+                  <li onClick={closeMenu}>
+                    <NavLink to="/startup-funding">Startup Funding </NavLink>
+                  </li>
+  
+                  <li onClick={closeMenu}>
+                    <NavLink to="/innovation-support">Innovation Support </NavLink>
+                  </li>
+                  
                   <li onClick={closeMenu}>
                     <NavLink to="/learning-resource-centre">
                       Learning Resource Centre
@@ -151,19 +173,6 @@ function Nav() {
                     <NavLink to="/document-resource-centre">
                       Document Resource Centre
                     </NavLink>
-                  </li>
-
-                  <li onClick={closeMenu}>
-                    <NavLink to="/co-working">Co-working</NavLink>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <NavLink to="/our-innovations">Our Innovations </NavLink>
-                  </li>
-                  <li onClick={closeMenu} className="">
-                    <NavLink to="/events">Events</NavLink>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <NavLink to="/about">About </NavLink>
                   </li>
                   <li onClick={closeMenu} className="contact">
                     <NavLink to="/contact">Contact us</NavLink>

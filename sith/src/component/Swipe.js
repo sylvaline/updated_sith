@@ -25,7 +25,6 @@ function Swipe() {
         
         spaceBetween={10}
         // navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
         className="mySwiper2"
       >
         
@@ -33,11 +32,10 @@ function Swipe() {
         <Link to="/about-user">
         <div className="swiper_style">
           <img src="\image\office_img1.jpg" alt="" srcset="" />
-          <div className="swiper_card">
-            <div className="swiper_card_inner">
-            <i className="far fa-plus-square"></i>
+            <div className="swiper_content">
+              <h1>Hello</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore modi error sapiente reprehenderit dolorem necessitatibus autem aspernatur perspiciatis temporibus laudantium consectetur cupiditate accusantium vel voluptatum repellendus, maiores cumque exercitationem?</p>
             </div>
-          </div>
           </div>
         </Link>
         </SwiperSlide>
@@ -45,11 +43,10 @@ function Swipe() {
         <Link to="/about-user">
         <div className="swiper_style">
           <img src="\image\office_img2.jpg" alt="" srcset="" />
-          <div className="swiper_card">
-            <div className="swiper_card_inner">
-            <i className="far fa-plus-square"></i>
+            <div className="swiper_content">
+              <h1>Hello</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore modi error sapiente reprehenderit dolorem necessitatibus autem aspernatur perspiciatis temporibus laudantium consectetur cupiditate accusantium vel voluptatum repellendus, maiores cumque exercitationem?</p>
             </div>
-          </div>
           </div>
         </Link>
         </SwiperSlide>
@@ -57,11 +54,10 @@ function Swipe() {
         <Link to="/about-user">
         <div className="swiper_style">
           <img src="\image\office_img1.jpg" alt="" srcset="" />
-          <div className="swiper_card">
-            <div className="swiper_card_inner">
-            <i className="far fa-plus-square"></i>
+            <div className="swiper_content">
+              <h1>Hello</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore modi error sapiente reprehenderit dolorem necessitatibus autem aspernatur perspiciatis temporibus laudantium consectetur cupiditate accusantium vel voluptatum repellendus, maiores cumque exercitationem?</p>
             </div>
-          </div>
           </div>
         </Link>
         </SwiperSlide>
@@ -69,11 +65,10 @@ function Swipe() {
         <Link to="/about-user">
         <div className="swiper_style">
           <img src="\image\office_img2.jpg" alt="" srcset="" />
-          <div className="swiper_card">
-            <div className="swiper_card_inner">
-            <i className="far fa-plus-square"></i>
+            <div className="swiper_content">
+              <h1>Hello</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore modi error sapiente reprehenderit dolorem necessitatibus autem aspernatur perspiciatis temporibus laudantium consectetur cupiditate accusantium vel voluptatum repellendus, maiores cumque exercitationem?</p>
             </div>
-          </div>
           </div>
         </Link>
         </SwiperSlide>
@@ -81,39 +76,12 @@ function Swipe() {
         <Link to="/about-user">
         <div className="swiper_style">
           <img src="\image\office_img1.jpg" alt="" srcset="" />
-          <div className="swiper_card">
-            <div className="swiper_card_inner">
-            <i className="far fa-plus-square"></i>
+            <div className="swiper_content">
+              <h1>Hello</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore modi error sapiente reprehenderit dolorem necessitatibus autem aspernatur perspiciatis temporibus laudantium consectetur cupiditate accusantium vel voluptatum repellendus, maiores cumque exercitationem?</p>
             </div>
           </div>
-          </div>
         </Link>
-        </SwiperSlide>
-        
-      </Swiper>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={20}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesVisibility={true}
-        watchSlidesProgress={true}
-        className="mySwiper"
-      >
-         <SwiperSlide>
-         <img src="\image\office_img1.jpg" alt="" srcset="" />
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src="\image\office_img2.jpg" alt="" srcset="" />
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src="\image\office_img1.jpg" alt="" srcset="" />
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src="\image\office_img2.jpg" alt="" srcset="" />
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src="\image\office_img1.jpg" alt="" srcset="" />
         </SwiperSlide>
         
       </Swiper>

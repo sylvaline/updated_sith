@@ -19,10 +19,8 @@
     }
 
     .home_contact_us{
-        
         background-color: $bg_deep_blue;
         width: 100%;
-       
 
         .home_contact_us_inner{
             padding: 1em;
@@ -155,9 +153,10 @@
     
     .landing_page{
         margin-top: -1.5em;
-        height: 94vh;
+        height: 100vh;
         width: 100%;
         background-color: $accent_color;
+        
         
         
 
@@ -230,7 +229,7 @@
 
             .home_work_content{
                 width: 90%;
-                margin: 1em auto 3em;
+                margin: -.5em auto 3em;
                 color: black;
 
                 h3{
@@ -358,7 +357,9 @@
                 text-align: left;
                 color: $accent_color;
                 width: 80%;
-                margin-top: -.1em;
+                margin-top: -1em;
+                margin-bottom: 2em;
+              
             }
             .title_line{
                 width: 10%;
@@ -409,6 +410,12 @@
                     z-index: 100;
                     height: 60vh;
                     padding: 1em;
+                   
+                    .left_btn{
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 3em;
+                    }
 
                     p{
                         font-size: 1.2em;
@@ -417,12 +424,12 @@
                 }
                 .right{
                     flex: 1;
-                    margin-top: -4em;
+                    margin-top: -1.5em;
                     background-color: $accent_color;
                     border-radius: .3em;
                     
                     position: relative;
-                    height: 65vh;
+                    height: 55vh;
                     width: 20em !important;
 
                     .right_inner{
@@ -433,6 +440,7 @@
                         right: 4em;
                         height: 18em;
                         width: 33em;
+                        z-index: 100;
 
                     }
                 }
@@ -512,12 +520,13 @@
         }
         .landing_page{
             margin-top: -2.8em;
-           
+            // for extending the landing page up
 
             .landing_page_inner{
                 width: 80%;
 
                 .type_writing{
+                    top: 4em;
                     left: 0;
                     padding:0 2em ;
                 }
@@ -534,6 +543,7 @@
                 }
 
                 .home_work_content{
+                    margin-top: -4em;
                     h1{
                         font-size: 1.5em;
                     }
@@ -562,6 +572,7 @@
 
                         p{
                             font-size: 1.4em !important;
+                            margin-bottom: 1em !important;
                         }
                     }
                     }
@@ -605,7 +616,12 @@
                             width: 100%;
                             margin: -13em auto 0;
 
-                            
+                            .left_btn{
+                                display: flex;
+                                justify-content: flex-end;
+                                margin-top: 0;
+                            }
+
                             p{
                                 font-size: 1.2em;
                             }
@@ -615,8 +631,6 @@
                             height: auto;
                             width: 100% !important;
                             background-color: $accent_color !important;
-                            
-                           
 
                             .right_inner{
                                 right: 0 !important;

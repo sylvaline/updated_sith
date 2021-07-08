@@ -1,14 +1,19 @@
 .about_user{
-        margin-top: -2em;
-        background-color: $accent_color;
+        // margin-top: -2em;
+        // background-color: $accent_color;
 
     .about_user_inner{
-        margin-top: -3em;
-        background-color: $accent_color;
+        // margin-top: -3em;
+        // background-color: $accent_color;
         padding: 1em;
         display: flex;
         width: 80%;
         margin: auto;
+        color: $gray;
+
+        .intro_column{
+            margin-top: -3em;
+        }
     
         img{
             object-fit: cover;

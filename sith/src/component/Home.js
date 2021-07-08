@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
 import ParticlesBg from "particles-bg";
@@ -6,17 +6,18 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import Float from "./Float";
 import ContactForm from "./ContactForm";
-import Swipe from './Swipe'
-import MapSection from './Maps'
+
+import Contact from "./Contact";
 
 function Home() {
+
   
 
-  const location = {
-    address: '1600 Amphitheatre Parkway, Mountain View, california.',
-    lat: 37.42216,
-    lng: -122.08427,
-  }
+  useEffect(()=>{
+  
+    window.scrollTo({top:0, behavior:'smooth'})
+    
+  },[])
 
   return (
     <div className="home">
@@ -54,7 +55,7 @@ function Home() {
              
                 <div className="right">
                   <div className="right_inner">
-                  <Swipe/>
+                  <img src="\image\office_img1.jpg" alt="" srcset="" />
                   </div>
                 </div>
              
@@ -84,6 +85,14 @@ function Home() {
                 </p>
                 
               </Fade>
+
+              <Fade right>
+              <div className="left_btn">
+                <Link to="/about">
+                <button>Meet Us</button>
+                </Link>
+              </div>
+            </Fade>
             
             </div>
              
@@ -233,6 +242,7 @@ function Home() {
               <div className="home_event_right">
                 <h2>Our events and Calender</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut accusantium suscipit, aliquid culpa rem magnam beatae ducimus incidunt. Illo illum saepe voluptas quam sed ea reprehenderit voluptate iure rem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut accusantium suscipit, aliquid culpa rem magnam beatae ducimus incidunt. Illo illum saepe voluptas quam sed ea reprehenderit voluptate iure rem.</p>
               </div>
             </div>
           </div>
@@ -270,48 +280,7 @@ function Home() {
         </div>
          
       </div>    
-
-      <div className="home_contact_us">
-        <div className="home_contact_us_inner">
-          <div className="address">
-          <h1>
-                <Link to="/">Space Innovation</Link>
-              </h1>
-              <p>
-              <a
-                    href="mailto:okekesylvaline.com?subject=From Space Innovation Tech Hub websit"
-                    alt="Email Space Innovation Tech Hub"
-                  >
-                    admin@spaceinnovationTH.com
-                  </a>
-              </p>
-              <p>
-              <a
-                    href="tel:08167424880"
-                    alt="call Space Innovation Tech Hub"
-                  >
-                    08025363537
-                  </a>
-              </p>
-              <p>
-              <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-youtube"></i>
-            <i className="fab fa-instagram"></i>
-              </p>
-          </div>
-          <div className="contact_form">
-            <h2>Contact Us</h2>
-            <p>No 36 Uke wende, High Level, Makurdi. Benue State.</p>
-            <div className="form_div">
-              <ContactForm />
-            </div>
-          </div>
-          <div className="map">
-          <MapSection location={location} zoomLevel={17} />
-          </div>
-        </div>
-      </div>  
+          <Contact />
         </div>
       </div>
 
@@ -342,14 +311,14 @@ function Home() {
                 </p>
                 
               </Fade>
-            
+            <Fade right>
+              <div className="left_btn">
+                <Link to="/about">
+                <button>Meet Us</button>
+                </Link>
+              </div>
+            </Fade>
             </div>
-
-            <div className="right">
-                  <div className="right_inner">
-                  <Swipe/>
-                  </div>
-                </div>
              
              
               </div>
@@ -541,7 +510,6 @@ function Home() {
         </div>
          
       </div>    
-      
       <div className="home_contact_us">
         <div className="home_contact_us_inner">
           
@@ -553,7 +521,7 @@ function Home() {
             </div>
           </div>
           <div className="map">
-          <MapSection location={location} zoomLevel={17} />
+          {/* <MapSection location={location} zoomLevel={17} /> */}
           </div>
           <div className="address">
 
@@ -581,7 +549,8 @@ function Home() {
               </p>
           </div>
         </div>
-      </div>  
+      </div> 
+      
         </div>
       </div>
       

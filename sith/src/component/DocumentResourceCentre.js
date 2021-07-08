@@ -1,8 +1,13 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import SubLayout from './SubLayout';
 import bg from '../assets/image/office_img1.jpg'
 
 function DocumentResourceCentre() {
     const [bannerScroll, setBannerScroll] = useState(false);
+
+    useEffect(()=>{
+      window.scrollTo({top:0, behavior:'smooth'})
+    })
 
   const banner_on_scroll = () => {
     if (window.scrollY >= 50) {
@@ -15,7 +20,8 @@ function DocumentResourceCentre() {
   window.addEventListener("scroll", banner_on_scroll);
 
     return (
-        <div className="learning_resource">
+        <SubLayout>
+          <div className="learning_resource">
             <div className="banner">
             <img src={bg} alt="" />
                 <div className={bannerScroll ? "banner_card open":"banner_card"}>
@@ -28,6 +34,12 @@ function DocumentResourceCentre() {
                 </div>
             </div>
         </div>
+        <div className="page_content">
+          <div className="page_content_inner">
+            <h1>Content coming soon</h1>
+          </div>
+        </div>
+        </SubLayout>
     )
 }
 
