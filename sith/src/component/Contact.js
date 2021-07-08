@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ContactForm from "./ContactForm";
 import MapSection from './Maps'
 import { Link } from "react-router-dom";
 
 function Contact() {
+
+  useEffect(()=>{
+    window.scrollTo({top:0, behavior:'smooth'})
+  },[])
 
     const location = {
         address: '1600 Amphitheatre Parkway, Mountain View, california.',

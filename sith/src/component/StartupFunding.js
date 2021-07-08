@@ -7,7 +7,7 @@ function StartupFunding() {
 
     useEffect(()=>{
       window.scrollTo({top:0, behavior:'smooth'})
-    })
+    },[])
 
   const banner_on_scroll = () => {
     if (window.scrollY >= 50) {

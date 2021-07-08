@@ -6,7 +6,7 @@ function InnovationSupport() {
 
   useEffect(()=>{
     window.scrollTo({top:0, behavior:'smooth'})
-  })
+  },[])
 
   const [bannerScroll, setBannerScroll] = useState(false);
 
