@@ -11,6 +11,7 @@
 @import'maps';
 @import'mobile_menu';
 @import'footer';
+@import'page_loading';
 @import'about_user';
 @import'learning_resource_centre';
 
@@ -25,10 +26,18 @@
     padding: 0;
 }
 
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: white;
     color: white;
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
+        font-size: 3em;
+        
+      }
 
     .mobile_contact{
         display: none;
@@ -79,25 +88,32 @@ body{
         padding: 10px 0;
       }
 
-    a{
-        text-decoration: none;
-        color: white;
-    }
+      a {
+          text-decoration: none;
+          color: white;
+        position: relative;
+        display: inline;
+        cursor: pointer;
+        transition: color .4s ease;
+        
+        
+      }
 
     button{
         outline: none;
         background-color: $bg_deep_blue;
         color: white;
-        padding: .4em 1.5em;
+        padding: .6em 1.5em;
         font-size: .6em;
         transition: background-color .5s linear;
         cursor: pointer;
         border-radius: .3em;
         border: none;
+        box-shadow: $box_shadow;
 
         &:hover{
             background-color: $accent_color;
-            color: white;
+            color: $bg_deep_blue;
             
         }
     }
@@ -278,6 +294,12 @@ body{
             }
             
           }
+    }
+    .page_content{
+        .page_content_inner{
+            margin-left: .2em !important;
+            font-size: 1.5em;
+        }
     }
     .banner{
         margin-top: -3em !important;

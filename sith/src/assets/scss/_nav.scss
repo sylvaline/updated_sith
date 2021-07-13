@@ -209,8 +209,13 @@
         }
 
         .logo{
-            margin-top: -.5em;
+            
             font-size: 1.2em;
+            img{
+                width: 10em;
+                height: 10em;
+                object-fit: cover;
+            }
         }
 
         ul{
@@ -222,16 +227,17 @@
             .contact{
                 background-color: $bg_deep_blue;
                 border-radius: .3em;
+                box-shadow: $box_shadow;
 
                 &:hover{
-                    background-color: lighten($color: #233d93, $amount: 9);
+                    background-color: $accent_color;
                     border-radius: .3em;
                 }
 
                 a{
                     color: $accent_color;
                     &:hover{
-                        color: $accent_color;
+                        color: $bg_deep_blue;
                     } 
                 }
             }
@@ -247,10 +253,33 @@
                     border-radius: .3em;
                 }
 
-                a{
-                    &:hover{
-                        color: $accent_color;
-                    } 
+                a {
+                    text-decoration: none;
+                    color: $accent_color;
+                  position: relative;
+                  display: inline;
+                  cursor: pointer;
+                  transition: color .4s ease;
+                  
+                  &:hover {
+                    color: $accent_color;
+                    
+                    &:after {
+                      width: 100%;
+                    }
+                  }
+                  
+                  &:after {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    bottom: -.15em;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: darken($color: #FEFEFE, $amount: 0.1);
+                    transition: width .4s ease;
+                  }
                 }
             }
             
@@ -263,8 +292,6 @@
 @media screen and (max-width: 50em) {
     .nav{
         
-        
-
         .nav_inner{
             display: none;
         }
@@ -281,7 +308,6 @@
                 
             }
 
-            
             .phone{
                 margin-top: 0;
                 background-color: $accent_color;
@@ -350,6 +376,10 @@
             .hamburger{
                 margin-right: .8em;
                 margin-top: -2em;
+
+                i{
+                    font-size: 2em !important;
+                }
                 .line{
                     background-color: $accent_color !important;
                     height: .14em;
@@ -369,42 +399,7 @@
                 // margin-top: -5em;
                h1{
                    font-size: 1em;
-                   a{
-                    // color: white;
-                   }
                }
-            }
-
-            ul, .ul{
-                background-color: $accent_color;
-                display: block;
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
-                bottom: 0;
-                overflow: auto;
-                height: 100vh;
-                width: 100%;
-                
-
-                &.open{
-                    border-top: .3em solid $accent_color;
-                    top: 3.1em;
-                }
-
-                .contact{
-                    margin-bottom: 2em;
-                }
-
-                li{
-                    margin-top: .5em;
-                    font-size: 1.5em;
-
-                    a{
-                        color: white;
-                    }
-                }
             }
         }
 

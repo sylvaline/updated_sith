@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
 
 function Nav() {
-  const [isMenu, setMenu] = useState(false);
-
-  const closeMenu = () => setMenu(false);
+  
   const [navScroll, setNavScroll] = useState(false);
 
   const nav_on_scroll = () => {
@@ -25,17 +24,16 @@ function Nav() {
             <div className="phone_left">
               <p>
                 <span>
-                <a
+                  <a
                     href="mailto:okekesylvaline.com?subject=From Space Innovation Tech Hub websit"
                     alt="Email Space Innovation Tech Hub"
                   >
                     admin@spaceinnovationTH.com
                   </a>
-                  
                 </span>
                 <span className="bar_line">|</span>
                 <span>
-                <a
+                  <a
                     href="tel:08167424880"
                     alt="call Space Innovation Tech Hub"
                   >
@@ -45,18 +43,16 @@ function Nav() {
               </p>
             </div>
             <div className="phone_right">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-youtube"></i>
-            <i className="fab fa-instagram"></i>
+              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-twitter"></i>
+              <i className="fab fa-youtube"></i>
+              <i className="fab fa-instagram"></i>
             </div>
           </div>
 
           <div className={navScroll ? "main_nav open" : "main_nav"}>
             <div className="logo">
-              <h1>
-                <Link to="/">Space </Link>
-              </h1>
+            <Link to="/"><img src="\image\spacelogo.png" alt="" /></Link>
             </div>
 
             <div className="menu">
@@ -98,89 +94,7 @@ function Nav() {
         </div>
 
         <div className="nav_mobile">
-          <div className="phone">
-            <p>
-              <span>
-                <a href="tel:08167424880" alt="call Space Innovation Tech Hub">
-                  <i className="fas fa-phone"></i>
-                </a>
-              </span>
-              
-              <span>
-                <a
-                  href="mailto:okekesylvaline.com?subject=From Space Innovation Tech Hub websit"
-                  alt="Email Space Innovation Tech Hub"
-                >
-                  <i className="far fa-envelope"></i>
-                </a>
-              </span>
-            </p>
-            <div className="mobile_social">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-youtube"></i>
-            <i className="fab fa-instagram"></i>
-            </div>
-          </div>
-
-          <div className={navScroll ? "main_nav open" : "main_nav"}>
-            <div className="logo">
-              <h1>
-                <Link to="/">Space </Link>
-              </h1>
-            </div>
-            <div
-              onClick={() => setMenu(!isMenu)}
-              className={isMenu ? "hamburger move_right" : "hamburger"}
-            >
-              {isMenu ? (
-                <i className="fas fa-times"></i>
-              ) : (
-                <div className="line"></div>
-              )}
-            </div>
-            {isMenu && (
-              <div className="menu">
-                <ul className={navScroll ? "ul open" : " ul"}>
-                  
-                  <li onClick={closeMenu} className="">
-                    <NavLink to="/events">Events</NavLink>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <NavLink to="/about">About us</NavLink>
-                  </li>
-
-                  <li onClick={closeMenu}>
-                    <NavLink to="/co-working">Co-working</NavLink>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <NavLink to="/our-innovations">Our Innovations </NavLink>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <NavLink to="/startup-funding">Startup Funding </NavLink>
-                  </li>
-  
-                  <li onClick={closeMenu}>
-                    <NavLink to="/innovation-support">Innovation Support </NavLink>
-                  </li>
-                  
-                  <li onClick={closeMenu}>
-                    <NavLink to="/learning-resource-centre">
-                      Learning Resource Centre
-                    </NavLink>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <NavLink to="/document-resource-centre">
-                      Document Resource Centre
-                    </NavLink>
-                  </li>
-                  <li onClick={closeMenu} className="contact">
-                    <NavLink to="/contact">Contact us</NavLink>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
+          <MobileMenu />
         </div>
       </div>
     </>

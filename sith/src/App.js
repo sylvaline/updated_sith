@@ -15,13 +15,14 @@ import PageLoading from "./component/PageLoading";
 import StartupFunding from "./component/StartupFunding";
 import InnovationSupport from "./component/InnovationSupport";
 
+
 function App() {
   const [page_loading, setPage_loading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setPage_loading(false);
-    }, 1500);
+    }, 4000);
   });
 
   if (page_loading) {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
-import ParticlesBg from "particles-bg";
+import Wave from 'react-wavify'
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import Float from "./Float";
@@ -21,17 +21,18 @@ function Home() {
 
   return (
     <div className="home">
+       
       <div className="landing_page">
-       <ParticlesBg type="circle" />
         <div className="landing_page_inner">
+          <div className="landing_page_info">
           <div className="type_writing">
           
           <Slide bottom>
           <Typical
             steps={[
-              "Welcome to Space Innovation TechHub",
+              "Welcome to Space Innovation,",
               1000,
-              "We are the future of tech in Nigeria",
+              "We are the future of tech in Nigeria.",
               1000,
             ]}
             loop={Infinity}
@@ -39,14 +40,37 @@ function Home() {
           />
           </Slide>
           </div>
-          {/* <div className="landing_img">
-            <img src={oldman} alt="happy old man" />
-          </div> */}
+          <div className="more_landing_page_info">
+            <p>SpingShot is our latest innovation, sit amet consectetur adipisicing elit. Praesentium voluptates totam iure molestiae porro</p>
+            <div className="landing_btns">
+           
+            <a href='https://spingshot.com/' alt='spingshot' target="blank" className="landing_white_btn" ><span >See SpingShot</span>
+            </a>
+            <Link to='/our-innovations' ><button>Our innovations</button></Link>
+            </div>
+          </div>
+          </div>
+          <div className="space_innovations">
+            <div className="space_innovations_inner">
+              
+              <img className="top_img" src="\image\sping8-removebg-preview.png" alt="" />
+              <img className="bottom_img" src="\image\splash__1_-removebg-preview.png" alt="" />
+            </div>
+          </div>
           
         </div>
-        
       </div>
-
+      <Wave
+        className="wave"
+        fill="#00b9fe"
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 45,
+          speed: 0.1,
+          points: 5
+        }}
+      />
       <div className="home_main window">
         <div className="home_main_inner">
           <div className="home_content first_content">
@@ -70,9 +94,9 @@ function Home() {
                <div className="left">
               
               <Fade top>
-                <h3 className="title">Hi, we’re Space Innovation Tech Hub</h3>
+                <h3 className="title">Hi, we’re Space Innovation </h3>
                 <div className="title_line"></div>
-                <h4 className="sub_title">Space Innovation Tech Hub is the new face of technology in Africa. We are the future of tech</h4>
+                <h4 className="sub_title">Space Innovation is the new face of technology in Africa. We are the future of tech</h4>
               </Fade>
               <Fade bottom>
                 <p>
@@ -89,7 +113,7 @@ function Home() {
               <Fade right>
               <div className="left_btn">
                 <Link to="/about">
-                <button>Meet Us</button>
+                <button>Meet the team</button>
                 </Link>
               </div>
             </Fade>
@@ -175,8 +199,6 @@ function Home() {
                     {" "}
                     Innovation Support
                   </h2>
-
-                  
                  
                 </Slide>
               </div>
@@ -295,12 +317,26 @@ function Home() {
             
                <div className="left">
               
-              <Fade top>
-                <h3 className="title">Hi, we’re Space Innovation Tech Hub</h3>
+              
+              <Slide bottom>
+          <div className="type_writing">
+          <Typical
+            steps={[
+              "Welcome to Space Innovation",
+              1000,
+              "We are the future of tech in Nigeria",
+              1000,
+            ]}
+            loop={Infinity}
+            wrapper="h1"
+          />
+          </div>
+          </Slide>
+          <Slide bottom>
                 <div className="title_line"></div>
-                <h4 className="sub_title">Space Innovation Tech Hub is the new face of technology in Africa. We are the future of tech</h4>
-              </Fade>
-              <Fade bottom>
+                <h4 className="sub_title">Space Innovation is the new face of technology in Africa. We are the future of tech</h4>
+              </Slide>
+              <Slide bottom>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Cum eius earum molestias commodi corrupti
@@ -310,14 +346,14 @@ function Home() {
                   Cum eius earum molestias commodi corrupti 
                 </p>
                 
-              </Fade>
-            <Fade right>
+              </Slide>
+            <Slide right>
               <div className="left_btn">
                 <Link to="/about">
-                <button>Meet Us</button>
+                <button>Meet the team</button>
                 </Link>
               </div>
-            </Fade>
+            </Slide>
             </div>
              
              
