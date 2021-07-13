@@ -667,7 +667,9 @@
                     }
                 }
                 .home_event{
-                    font-size: .8em;
+                    h1{
+                        font-size: 1.5em !important;
+                    }
                     .home_event_inner{
                         display: block;
 

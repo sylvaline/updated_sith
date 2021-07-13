@@ -322,9 +322,9 @@ function Home() {
           <div className="type_writing">
           <Typical
             steps={[
-              "Welcome to Space Innovation",
+              "Welcome to Space Innovation,",
               1000,
-              "We are the future of tech in Nigeria",
+              "We are the future of tech in Nigeria.",
               1000,
             ]}
             loop={Infinity}
