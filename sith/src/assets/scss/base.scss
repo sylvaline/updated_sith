@@ -112,9 +112,11 @@ body{
         border: none;
         box-shadow: $box_shadow;
 
+        
+
         &:hover{
             background-color: $accent_color;
-            color: $bg_deep_blue;
+            color: white;
             
         }
     }

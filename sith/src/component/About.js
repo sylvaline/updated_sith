@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import SubLayout from "./SubLayout";
-import Swipe from "./Swipe";
+
 
 function About() {
 

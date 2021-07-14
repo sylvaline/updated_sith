@@ -1,5 +1,5 @@
 .contact_us{
-        
+    
     background-color: $bg_deep_blue;
     width: 100%;
    
@@ -42,5 +42,11 @@
                 margin-bottom: 1em;
             }
         }
+    }
+}
+
+@media screen and (max-width) {
+    .contact_us{
+        margin-top: 3em !important;
     }
 }
