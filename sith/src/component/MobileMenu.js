@@ -31,7 +31,7 @@ function MobileMenu() {
           <div className="hamburger">
             <span></span>
             <span></span>
-            <span></span>
+           
           </div>
           <div className="cross">
             <span></span>

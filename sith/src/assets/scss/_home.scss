@@ -215,18 +215,22 @@
 
             .landing_page_info{
                 flex: 1;
-                margin-top: 8em;
+                margin-top: 12em;
 
                 .type_writing{
-                    min-height: 10em;
+                    min-height: 8em;
                 
                     h1{
                         color: $bg_deep_blue;
                         margin-bottom: 1em;
+                        text-align: center;
                     }
                 }
                 .more_landing_page_info{
                     p{
+                        span{
+                            color: $bg_deep_blue;
+                        }
                         font-size: 1.2em;
                         margin-bottom: 1.5em;
                     }
@@ -237,7 +241,7 @@
                             position: absolute;
                             right: 7em;
                             width: 10em;
-                            top: -.4em;
+                            top: -.6em;
                             
                         }
                         .landing_white_btn{
@@ -246,7 +250,7 @@
                                 background-color: white;
                                 color: $accent_color;
                                 margin-top: 2em;
-                                padding: .6em 1.5em;
+                                padding: .7em 1.5em;
                                 font-size: 1.1em;
                                 transition: background-color .5s linear;
                                 cursor: pointer;
@@ -565,19 +569,60 @@
 @media screen and (max-width:50em) {
     .home{
         margin-top: -2.5em;
+        .wave{
+            height: 35vh;
+            position: relative;
+            z-index: -1;
+        }
         .landing_page{
             display: none;
-            margin-top: -2.8em !important;
-            // for extending the landing page up
-            height: 80vh;
+        }
+        .mobile_landing_page{
+           margin-top: -5em;
+            background-color: $accent_color;
+            height: 50em;
+            .mobile_landing_page_inner{
+               padding: 1em;
+                .mobile_landing_page_info{
+                    padding-top: 3em;
+                    .more_landing_page_info_inner{
+                      margin-top: 1em;
+                    }
+                    
+                    p{
+                        span{
+                            color: $bg_deep_blue;
+                            font-weight: bold;
+                        }
+                    }
+                    .mobile_type_writing{
+                        min-height: 13em;
+                        h1{
+                            color: $bg_deep_blue;
+                            text-align: center;
+                        }
+                    }
+                }
 
-            .landing_page_inner{
-                width: 80%;
-                
-                .type_writing{
-                    // top: 4em;
-                    // left: 0;
-                    // padding:0 2em ;
+                .mobile_space_innovations{
+                    margin-bottom: .2em;
+                    .mobile_space_innovations_inner{
+                        display: flex;
+                       
+                        .top_img{
+                            width: 23em;
+                            height: 18em;
+                            object-fit: cover;
+                        }
+                        .bottom_img{
+                            width: 10em;
+                            height: 18em;
+                            object-fit: cover;
+                            position: absolute;
+                            left: 2em;
+                            
+                        }
+                    }
                 }
             }
         }
@@ -596,9 +641,6 @@
             display: block;
 
             .resource_clicked{
-
-                // .btn_first{ // for making the first btn of resourse center equal with the center btn   
-                // }
             
                 .btn_center{
                     margin-top: .5em !important;
@@ -606,9 +648,6 @@
                     background-color: $accent_color;
                     color: black;
 
-                    // i{
-                    //     top: 1em;
-                    // }
                 }
                 span{
                     color: red;

@@ -41,7 +41,7 @@ function Home() {
           </Slide>
           </div>
           <div className="more_landing_page_info">
-            <p>SpingShot is our latest innovation, sit amet consectetur adipisicing elit. Praesentium voluptates totam iure molestiae porro</p>
+            <p><span>SpingShot</span> is our latest innovation, sit amet consectetur adipisicing elit. Praesentium voluptates totam iure molestiae porro</p>
             <div className="landing_btns">
            
             <a href='https://spingshot.com/' alt='spingshot' target="blank" className="landing_white_btn" ><span >See SpingShot</span>
@@ -309,6 +309,56 @@ function Home() {
      
 
       {/* For mobile only */}
+
+      <div className="mobile_landing_page">
+        <div className="mobile_landing_page_inner">
+          <div className="mobile_landing_page_info">
+          <div className="mobile_type_writing">
+          
+          <Slide bottom>
+          <Typical
+            steps={[
+              "Welcome to Space Innovation,",
+              1000,
+              "We are the future of tech in Nigeria.",
+              1000,
+            ]}
+            loop={Infinity}
+            wrapper="h1"
+          />
+          </Slide>
+          </div>
+
+          <div className="mobile_space_innovations">
+            <div className="mobile_space_innovations_inner">
+            <img className="bottom_img" src="\image\splash__1_-removebg-preview.png" alt="" />
+              <img className="top_img" src="\image\sping8-removebg-preview.png" alt="" />
+            </div>
+          </div>
+
+          <div className="more_landing_page_info_inner">
+            <p> <span>SpingShot</span> is our latest innovation, sit amet consectetur adipisicing elit. Praesentium voluptates totam iure molestiae porro</p>
+            <div className="mobile_landing_btns">
+           
+            <a href='https://spingshot.com/' alt='spingshot' target="blank"><button>More on SpingShot</button></a>
+            </div>
+          </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <Wave
+        className="wave"
+        fill="#00b9fe"
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 45,
+          speed: 0.1,
+          points: 5
+        }}
+      />
       
       <div className="home_main mobile">
         <div className="home_main_inner">
@@ -317,8 +367,9 @@ function Home() {
             
                <div className="left">
               
+           
               
-              <Slide bottom>
+              {/* <Slide bottom>
           <div className="type_writing">
           <Typical
             steps={[
@@ -331,8 +382,9 @@ function Home() {
             wrapper="h1"
           />
           </div>
-          </Slide>
+          </Slide> */}
           <Slide bottom>
+          <h3 className="title">Hi, we’re Space Innovation </h3>
                 <div className="title_line"></div>
                 <h4 className="sub_title">Space Innovation is the new face of technology in Africa. We are the future of tech</h4>
               </Slide>
