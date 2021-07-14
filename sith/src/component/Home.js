@@ -11,8 +11,6 @@ import Contact from "./Contact";
 
 function Home() {
 
-  
-
   useEffect(()=>{
   
     window.scrollTo({top:0, behavior:'smooth'})
@@ -30,7 +28,7 @@ function Home() {
           <Slide bottom>
           <Typical
             steps={[
-              "Welcome to Space Innovation,",
+              "Welcome to Space Innovation Hub,",
               1000,
               "We are the future of tech in Nigeria.",
               1000,
@@ -83,18 +81,14 @@ function Home() {
                   </div>
                 </div>
              
-             
-          
               <div className="bg_about_back_line"></div>
                <div className="bg_about_back"></div>
                <div className="bg_about_back shift_right"></div>
-        
-
-             
+         
                <div className="left">
               
               <Fade top>
-                <h3 className="title">Hi, we’re Space Innovation </h3>
+                <h3 className="title">Hi, we’re Space Innovation Hub </h3>
                 <div className="title_line"></div>
                 <h4 className="sub_title">Space Innovation is the new face of technology in Africa. We are the future of tech</h4>
               </Fade>
@@ -318,7 +312,7 @@ function Home() {
           <Slide bottom>
           <Typical
             steps={[
-              "Welcome to Space Innovation,",
+              "Welcome to Space Innovation Hub,",
               1000,
               "We are the future of tech in Nigeria.",
               1000,
@@ -384,7 +378,7 @@ function Home() {
           </div>
           </Slide> */}
           <Slide bottom>
-          <h3 className="title">Hi, we’re Space Innovation </h3>
+          <h3 className="title">Hi, we’re Space Innovation Hub </h3>
                 <div className="title_line"></div>
                 <h4 className="sub_title">Space Innovation is the new face of technology in Africa. We are the future of tech</h4>
               </Slide>

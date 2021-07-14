@@ -19,7 +19,7 @@ function MobileMenu() {
   window.addEventListener("scroll", nav_on_scroll);
 
   return (
-    <div className="nav_mobile">
+    <div className="mobile_nav_menu">
       
         <div className="nav_header">
         <div className="logo">

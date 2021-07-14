@@ -1,10 +1,7 @@
-.nav_mobile{
-    z-index: 10000;
+.mobile_nav_menu{
+    z-index: 100;
     position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
     
 
     .nav_header{
