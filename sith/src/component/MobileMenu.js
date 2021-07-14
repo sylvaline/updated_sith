@@ -20,98 +20,77 @@ function MobileMenu() {
 
   return (
     <div className="mobile_nav_menu">
-      
-        <div className="nav_header">
+      <div className="nav_header">
         <div className="logo">
-              
-                <Link to="/"><img src="\image\spacelogo.png" alt="" /></Link>
-              
-            </div>
-        <div onClick={()=>setMenu(!isMenu)} className={isMenu ? "menu-toggle open":"menu-toggle"}>
+          <Link to="/">
+            <img src="\image\spacelogo.png" alt="" />
+          </Link>
+        </div>
+        <div
+          onClick={() => setMenu(!isMenu)}
+          className={isMenu ? "menu-toggle open" : "menu-toggle"}
+        >
           <div className="hamburger">
             <span></span>
             <span></span>
-           
           </div>
           <div className="cross">
             <span></span>
             <span></span>
           </div>
         </div>
-        
-        </div>
-        
-            <div>
-              <Slide left>
-              <ul className={isMenu ? "ul open" : "ul"}>
-                <li onClick={closeMenu} className="">
-                  <NavLink to="/events">Events</NavLink>
-                </li>
-                <li onClick={closeMenu}>
-                  <NavLink to="/about">About us</NavLink>
-                </li>
+      </div>
 
-                <li onClick={closeMenu}>
-                  <NavLink to="/co-working">Co-working</NavLink>
-                </li>
-                <li onClick={closeMenu}>
-                  <NavLink to="/our-innovations">Our Innovations </NavLink>
-                </li>
-                <li onClick={closeMenu}>
-                  <NavLink to="/startup-funding">Startup Funding </NavLink>
-                </li>
+      <div>
+        <Slide left>
+          <ul className={isMenu ? "ul open" : "ul"}>
+            <li onClick={closeMenu} className="">
+              <NavLink to="/events">Events</NavLink>
+            </li>
+            <li onClick={closeMenu}>
+              <NavLink to="/about">About us</NavLink>
+            </li>
 
-                <li onClick={closeMenu}>
-                  <NavLink to="/innovation-support">
-                    Innovation Support{" "}
-                  </NavLink>
-                </li>
+            <li onClick={closeMenu}>
+              <NavLink to="/co-working">Co-working</NavLink>
+            </li>
+            <li onClick={closeMenu}>
+              <NavLink to="/our-innovations">Our Innovations </NavLink>
+            </li>
+            <li onClick={closeMenu}>
+              <NavLink to="/startup-funding">Startup Funding </NavLink>
+            </li>
 
-                <li onClick={closeMenu}>
-                  <NavLink to="/learning-resource-centre">
-                    Learning Resource Centre
-                  </NavLink>
-                </li>
-                <li onClick={closeMenu}>
-                  <NavLink to="/document-resource-centre">
-                    Document Resource Centre
-                  </NavLink>
-                </li>
-                <li onClick={closeMenu} className="contact">
-                  <NavLink to="/contact">Contact us</NavLink>
-                </li>
-              </ul>
-              </Slide>
-            </div>
-        
-      
+            <li onClick={closeMenu}>
+              <NavLink to="/innovation-support">Innovation Support </NavLink>
+            </li>
 
-      {/* <div className={navScroll ? "main_nav open" : "main_nav"}>
-            <div className="logo">
-              <h1>
-                <Link to="/">Space </Link>
-              </h1>
-            </div>
-            <div
-              onClick={() => setMenu(!isMenu)}
-              className={isMenu ? "hamburger move_right" : "hamburger"}
-            >
-              {isMenu ? (
-                <i className="fas fa-times"></i>
-              ) : (
-                <>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-                </>
-              )}
-            </div>
-            {isMenu && (
-              <div className="menu">
-                
-              </div>
-            )}
-          </div> */}
+            <li onClick={closeMenu}>
+              <NavLink to="/learning-resource-centre">
+                Learning Resource Centre
+              </NavLink>
+            </li>
+            <li onClick={closeMenu}>
+              <NavLink to="/document-resource-centre">
+                Document Resource Centre
+              </NavLink>
+            </li>
+            <li onClick={closeMenu} className="contact">
+              <NavLink to="/contact">Contact us</NavLink>
+            </li>
+            <li className="menu_social_icons">
+              
+                <p>
+                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-youtube"></i>
+                  <i className="fab fa-instagram"></i>
+                </p>
+              
+            </li>
+          </ul>
+        </Slide>
+      </div>
     </div>
   );
 }

@@ -120,6 +120,7 @@ span {
   ul, .ul{
     background-color: $accent_color;
     display: none;
+    list-style: none;
     top: 0;
     right: 0;
     left: 0;
@@ -128,18 +129,30 @@ span {
     height: 100vh;
     width: 100%;
     z-index: 100;
-    padding: 1em;
+    
     text-align: center;
     
 
     &.open{
-        border-top: .3em solid $accent_color;
+        border-top: .1em solid $accent_color;
         top: 3.1em;
         display: block;
     }
 
     .contact{
         margin-bottom: 2em;
+    }
+
+    .menu_social_icons{
+      border-top: .3em solid $bg_deep_blue;
+
+      p{
+        margin-top: 1em;
+        i{
+          margin-right: 1em;
+          font-size: 1.3em;
+        }
+      }
     }
 
     li{
