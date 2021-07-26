@@ -15,12 +15,16 @@
         background-color: $accent_color;
         margin-top: -4em;
         color: $bg_deep_blue;
+        color:#230270;
     }
 
     .sub_title{
         margin: 1em 0;
     }
     .about_inner{
+        .staff_management{
+            margin-bottom: 3em;
+        }
         .about_staffs{
             
             h3{
@@ -29,7 +33,7 @@
                 
             }
             h1{
-                margin-bottom: 3em;
+                // margin-bottom: 3em;
                 margin-top: .2em;
                 margin-left: 1.5em;
                 color: $gray;
@@ -39,7 +43,7 @@
                 width: 90%;
                 margin: 0 auto 3em;
                 color: $gray;
-                max-height: 20em;
+                // max-height: 20em;
             
                 .staff_img{
                     flex: 1;
@@ -49,9 +53,25 @@
                         object-fit: cover;
                     }
                 }
+
+                .staff_info_p{
+                    p{
+                        background-color: white;
+                        box-shadow: $box_shadow;
+                        padding: .5em;
+                       
+                    }
+                }
+
+                .staff_info_grid{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));
+                    
+                }
+
                 .staff_info{
                     flex: 1;
-                    padding: 5em 2em 2em 2em;
+                    padding: 2em 2em 2em 2em;
 
                     h2{
                         margin-bottom: 1em;
@@ -121,7 +141,7 @@
                     border-radius: .3em;
                     
                     position: relative;
-                    height: 55vh;
+                    height: 60vh;
                     width: 20em !important;
 
                     .right_inner{
@@ -145,6 +165,8 @@
     .about{
         position: relative;
         z-index: -1 !important;
+
+       
         
         .title{
             width: 90%;
@@ -169,12 +191,11 @@
                 }
                 .about_staffs_inner{
                     display: block;
-                    min-height: 35em;
-                    
 
                     .staff_info{
                         padding: 1em;
                     }
+
                 }
             }
             .about_intro{
@@ -219,6 +240,7 @@
                             }
                         }
                         .right{
+                            display: none; // hiding the about me image for now
                             margin-top: 30em;
                             height: auto;
                             width: 100% !important;

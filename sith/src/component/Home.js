@@ -30,7 +30,7 @@ function Home() {
             steps={[
               "Welcome to Space Innovation Hub,",
               1000,
-              "We are the future of tech in Nigeria.",
+              "Your one stop for technological advancement.",
               1000,
             ]}
             loop={Infinity}
@@ -77,7 +77,7 @@ function Home() {
              
                 <div className="right">
                   <div className="right_inner">
-                  <img src="\image\office_img1.jpg" alt="" srcset="" />
+                  <img src="\image\laptop1.jpg" alt="" srcset="" />
                   </div>
                 </div>
              
@@ -90,16 +90,14 @@ function Home() {
               <Fade top>
                 <h3 className="title">Hi, we’re Space Innovation Hub </h3>
                 <div className="title_line"></div>
-                <h4 className="sub_title">Space Innovation is the new face of technology in Africa. We are the future of tech</h4>
+                <h4 className="sub_title">Space Innovation is the stop-point for technology development and innovation in Makurdi Benue state of Nigeria</h4>
               </Fade>
               <Fade bottom>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cum eius earum molestias commodi corrupti
+                It is also a statement of fact that this will be the largest Innovation Hub in Northern Nigeria as it regards experience, human resources, and geography.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cum eius earum molestias commodi corrupti 
+                Space Hub is designed to cater for the deficiency of technology enthusiasm of Mid-Belt Nigeria and the entire Northern Nigeria.
                 </p>
                 
               </Fade>
@@ -128,7 +126,7 @@ function Home() {
                 <div className="fimg f2">
                 <Link to="/our-innovations">
                 <div className="card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+            <img src="\image\man.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -146,7 +144,7 @@ function Home() {
                 <div className="fimg f3">
                 <Link to="/learning-resource-centre">
                 <div className="card">
-            <img src="\image\office_img2.jpg" alt="" srcset="" />
+            <img src="\image\woman.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -166,7 +164,7 @@ function Home() {
               <div className="simg s1">
               <Link to="/document-resource-centre">
               <div className="card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+            <img src="\image\man.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -185,7 +183,7 @@ function Home() {
                 <div className="simg s2">
                 <Link to="/innovation-support">
                 <div className="card">
-            <img src="\image\office_img2.jpg" alt="" srcset="" />
+            <img src="\image\woman.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -226,7 +224,7 @@ function Home() {
                 <div className="timg">
                 <Link to="/co-working">
                 <div className="card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+            <img src="\image\man.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -253,7 +251,7 @@ function Home() {
               <h1>Events and Calender </h1>
             <div className="home_event_inner">
               <div className="home_event_left">
-              <img src="\image\office_img1.jpg" alt="" srcset="" />
+              <img src="\image\man.jpg" alt="" srcset="" />
               </div>
               <div className="home_event_right">
                 <h2>Our events and Calender</h2>
@@ -272,7 +270,9 @@ function Home() {
             <i className="fas fa-graduation-cap"></i>
           </div>
               <h2>TRAINING</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
+              
+              <p>Fundamentally, to learn how to become a software developer is the same as to pursue any career path: hard work will truly determine success, not talent.</p>
+              <p>We provide training for individuals and organisation with no knowledge on web/mobile application development to a self dependent level. </p>
             </div>
           </div>
           <div className="out_sourcing">
@@ -281,7 +281,11 @@ function Home() {
           <i class="fab fa-creative-commons-share"></i>
           </div>
               <h2>OUTSOURCING</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
+              <p>
+              Satisfied clients and successfully-completed projects is our focus, We provide the best technicians, risk minimisation, cost savings, for software development.
+              </p>
+              <p>with extra attention and deadline consideration to deliver high standards that speak of your business quality</p>
+              
           </div>
           </div>
           <div className="mentorship">
@@ -290,7 +294,8 @@ function Home() {
           <i className="fas fa-chalkboard-teacher"></i>
           </div>
               <h2>MENTORSHIP</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
+              <p>Mentoring can be a powerful tool for change and growth. Under the right mentor, a mentee is able to expand their capabilities and realize their potential. </p>
+              <p>At Space Innovation, we are committed to supporting and improving technology in Africa, hence the idea of providing a quality mentorship program.</p>
           </div>
           </div>
         </div>
@@ -314,7 +319,7 @@ function Home() {
             steps={[
               "Welcome to Space Innovation Hub,",
               1000,
-              "We are the future of tech in Nigeria.",
+              "Your one stop for technological advancement.",
               1000,
             ]}
             loop={Infinity}
@@ -343,7 +348,7 @@ function Home() {
         </div>
       </div>
       <Wave
-        className="wave"
+        className="mobile_wave"
         fill="#00b9fe"
         paused={false}
         options={{

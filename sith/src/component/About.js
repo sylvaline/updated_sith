@@ -25,30 +25,92 @@ function About() {
             <div className="bg_about_back shift_right"></div>
 
             <div className="left">
-              <Fade top>
-                <h3 className="title">Hi, we’re Space Innovation Tech Hub</h3>
+              <Fade bottom>
+                <h3 className="title">Hi, Welcome to Space Innovation Tech Hub</h3>
                 <div className="title_line"></div>
-                <h4 className="sub_title">
-                  Space Innovation Tech Hub is the new face of technology in
-                  Africa. We are the future of tech
-                </h4>
+                <p className="sub_title">
+                Space Innovation is the stop-point for technology development and innovation in Makurdi Benue state of Nigeria and it is also a statement of fact that this will be the largest Innovation Hub in Northern Nigeria as it regards experience, human resources, and geography.
+                </p>
               </Fade>
               <Fade bottom>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-                  eius earum molestias commodi corrupti
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-                  eius earum molestias commodi corrupti
-                </p>
+                
+               <p> Space Hub is designed to cater for the deficiency of technology enthusiasm of Mid-Belt Nigeria and the entire Northern Nigeria.</p>
               </Fade>
 
             </div>
           </div>
+
+
           <div className="about_staffs">
-            <h3>Our Management</h3>
-          <h1>Space Innovation Tech Hub Management</h1>
+            <h3>Our Vision and Goal</h3>
+          
+          <div className="about_staffs_inner">
+             
+              <div className="staff_info">
+              <p>
+                The goal of this center is to be the access point for technology and innovation development of global repute and practice.
+                </p>
+                
+              </div>
+          </div>
+      </div>
+
+      <div className="about_staffs">
+            <h3>Our Objective</h3>
+          
+          <div className="about_staffs_inner">
+             
+              <div className="staff_info staff_info_p">
+            
+                <p>
+                Create a mobile development center for beginners and expert to connect.
+                Create freelance support for independent start-up individuals through funding and partnership.
+                </p>
+                <p>
+                  Create an open-source innovation and development in technology.
+                Connect more people to modern technology and innovation.
+                Train and retrain in Information technology.
+                </p>
+                <p>
+                  Promote nano technology and nano innovation through education.
+                  Sales and services in modern technology and equipment.
+                </p>
+              </div>
+          </div>
+      </div>
+
+          <div className="about_staffs">
+            <h3>Core Service</h3>
+       
+            <div className="about_staffs_inner">
+             
+             <div className="staff_info staff_info_grid staff_info_p">
+           
+               <p>
+               IT co-worker space
+               </p>
+               <p>
+               Mobile app development
+               </p>
+               <p>
+               Software development
+               </p>
+               <p>IT Training</p>
+               <p>IT Innovation and Development Support</p>
+               <p>Domain Sales</p>
+               <p> Server Sales</p>
+               <p> Server Management</p>
+               <p>Computer sales and service</p>
+               <p>Start-up Support</p>
+               <p>Digital Marketing</p>
+               <p>Customer Service Support</p>
+             </div>
+         </div>
+      </div>
+
+      <div className="about_staffs ">
+            <h3 className="staff_management">Our Management</h3>
+       
           <div className="about_staffs_inner">
               <div className="staff_img">
               <img src="\image\office_img1.jpg" alt="" srcset="" />

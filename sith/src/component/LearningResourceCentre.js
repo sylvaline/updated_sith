@@ -36,7 +36,9 @@ function LearningResourceCentre() {
         </div>
         <div className="page_content">
           <div className="page_content_inner">
-            <h1>Content coming soon</h1>
+            <div className="learning_res">
+              <h2>Leaning Resources Center</h2>
+            </div>
           </div>
         </div>
         </SubLayout>
